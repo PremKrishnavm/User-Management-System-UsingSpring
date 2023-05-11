@@ -8,8 +8,6 @@ import org.springframework.stereotype.Repository;
 import edu.training.user_management_system.entity.Admin;
 import edu.training.user_management_system.repository.AdminRepo;
 
-
-
 @Repository
 public class AdminDao {
 	

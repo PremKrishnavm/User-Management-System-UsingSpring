@@ -10,8 +10,6 @@ import edu.training.user_management_system.entity.User;
 import edu.training.user_management_system.repository.AdminRepo;
 import edu.training.user_management_system.repository.UserRepo;
 
-
-
 @Repository
 public class UserDao {
 	

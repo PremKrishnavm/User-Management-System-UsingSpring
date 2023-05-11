@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.NotNull;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -19,8 +20,11 @@ public class Admin {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int adminId;
+	@NotNull(message="Admin name cannot be null")
 	private String adminName;
+	@NotNull(message="Admin Email cannot be null")
 	private String adminEmail;
+	@NotNull(message="Admin Password cannot be null")
 	private String adminPassword;
 
 	@OneToMany(cascade = CascadeType.ALL)
